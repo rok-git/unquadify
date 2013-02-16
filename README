@@ -13,3 +13,10 @@ iPhone の QuadCamera で撮影された写真は、一枚の写真に連続し�
 unquadify -r ROWS -c COLUMNS -i INPUTFILE -o OUTPUTFILE
 
 INPUTFILE にもとになる画像ファイルを指定しすると、それを ROWS x COLUMNS に分割して、 OUTPUTFILE-rxc.jpg のようなファイルができあがります。出力ファイル形式は JPEG 固定ですが、入力ファイルは OS X の Core Image   で読めればなんでも OK です。
+
+
+--
+
+github にソースコードを置いてみた。	(2013-02-17)
+
+rok
