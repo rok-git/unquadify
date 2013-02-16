@@ -1,0 +1,15 @@
+unquadify: 
+
+iPhone の QuadCamera で撮影された写真は、一枚の写真に連続した写真が、row x column として
+
+2x2
+1x4
+2x4
+1x8
+
+で記録されます。このプログラムはこの一枚の写真を別個の写真に分解します。
+
+使い方:
+unquadify -r ROWS -c COLUMNS -i INPUTFILE -o OUTPUTFILE
+
+INPUTFILE にもとになる画像ファイルを指定しすると、それを ROWS x COLUMNS に分割して、 OUTPUTFILE-rxc.jpg のようなファイルができあがります。出力ファイル形式は JPEG 固定ですが、入力ファイルは OS X の Core Image   で読めればなんでも OK です。
