@@ -17,6 +17,7 @@ INPUTFILE にもとになる画像ファイルを指定しすると、それを 
 
 --
 
-github にソースコードを置いてみた。	(2013-02-17)
+* github にソースコードを置いてみた。	(2013-02-17)
+* 最近の Xcode を使う場合は、Xcode の環境設定の Downloads から Command Line Tools をインストールしてください。
 
 rok
