@@ -51,7 +51,7 @@ bitmapDataForCroppedImageWithRCAtXY(
     NSBitmapImageRep *bitmapRep = 
 	[[NSBitmapImageRep alloc] initWithCIImage: croppedImage];
     NSData *data = [bitmapRep representationUsingType: NSJPEGFileType
-	properties: nil];
+	properties: [[NSDictionary alloc] init]];
     [bitmapRep release];
     return data;
 }
