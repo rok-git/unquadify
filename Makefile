@@ -4,7 +4,7 @@ FRAMEWORK = -framework Cocoa -framework QuartzCore
 #ARCH = -arch i386 -arch ppc -arch x86_64
 #ARCH = -arch i386 -arch x86_64
 ARCH = -arch x86_64
-CFALGS = $(DEBUG) $(FRAMEWORK) $(ARCH)
+CFALGS = $(DEBUG) $(ARCH)
 CC = cc $(CFLAGS) 
 LDFLAGS = $(FRAMEWORK) $(ARCH) $(DEBUG)
 LD = cc $(LDFLAGS)
@@ -18,6 +18,8 @@ OBJ =
 PROGS = unquadify
 
 all: $(PROGS)
+
+.PHONY: install archive clean tar
 
 install:
 	mkdir -p $(BINDIR)
