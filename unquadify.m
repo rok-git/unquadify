@@ -27,15 +27,6 @@ getOpt()
     quicktime = [defaults boolForKey: @"q"];
 }
 
-CGPoint
-getRowsAndColumns(CIImage *image)
-{
-    CGFloat r, c;
-    CGRect imageRect = [image extent];
-    CGSize size = imageRect.size;
-    CGPoint ret = {1.0, 1.0};			// temporarily set value for debug
-    return ret;
-}
 
 NSData *
 bitmapDataForCroppedImageWithRCAtXY(
